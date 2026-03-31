@@ -31,7 +31,7 @@ jobs:
           unzip -q sonar-scanner-cli-4.8.0.2856-linux.zip
           echo "$GITHUB_WORKSPACE/sonar-scanner-4.8.0.2856-linux/bin" >> $GITHUB_PATH
 
-      #run sonar scanner
+      ###run sonar scanner
       - name: Run SonarQube Scanner
         run: sonar-scanner
             -Dsonar.host.url=${{ secrets.SONAR_URL }}
